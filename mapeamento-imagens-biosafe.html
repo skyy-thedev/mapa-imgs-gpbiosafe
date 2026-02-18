@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mapeamento de Imagens – Grupo Biosafe</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #f4f6f9; color: #222; }
+  header { background: #1a5c2a; color: white; padding: 28px 40px; }
+  header h1 { font-size: 24px; font-weight: 700; }
+  header p { margin-top: 6px; font-size: 13px; opacity: .8; }
+  .legend { display: flex; gap: 20px; padding: 16px 40px; background: #fff; border-bottom: 1px solid #e0e0e0; flex-wrap: wrap; }
+  .badge { display: inline-block; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; }
+  .hero    { background: #d4edda; color: #155724; }
+  .section { background: #cce5ff; color: #004085; }
+  .logo    { background: #fff3cd; color: #856404; }
+  .client  { background: #f8d7da; color: #721c24; }
+  .footer  { background: #e2d9f3; color: #4a235a; }
+  main { padding: 30px 40px; }
+  .group { margin-bottom: 40px; }
+  .group-title { font-size: 16px; font-weight: 700; color: #1a5c2a; border-left: 4px solid #1a5c2a; padding-left: 12px; margin-bottom: 16px; }
+  table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,.08); }
+  th { background: #1a5c2a; color: white; text-align: left; padding: 11px 14px; font-size: 12px; text-transform: uppercase; letter-spacing: .5px; }
+  td { padding: 11px 14px; font-size: 13px; border-bottom: 1px solid #f0f0f0; vertical-align: top; }
+  tr:last-child td { border-bottom: none; }
+  tr:hover td { background: #f9fcf9; }
+  .id { font-weight: 700; color: #1a5c2a; white-space: nowrap; }
+  .desc { line-height: 1.5; }
+  .where { font-size: 12px; color: #555; }
+  .filename { font-family: monospace; font-size: 12px; background: #f0f0f0; padding: 2px 6px; border-radius: 4px; }
+  .dim { font-size: 11px; color: #888; }
+  .note { font-size: 12px; color: #c0392b; font-style: italic; }
+  .tip { background: #eaf4ea; border: 1px solid #b2d8b2; border-radius: 8px; padding: 16px 20px; margin-bottom: 30px; font-size: 13px; line-height: 1.7; }
+  .tip strong { color: #1a5c2a; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>📷 Mapeamento de Imagens — grupobiosafe.com.br</h1>
+  <p>Documento de referência para solicitação e substituição de imagens na página inicial (Home)</p>
+</header>
+
+<div class="legend">
+  <span>Categorias:</span>
+  <span class="badge hero">🟢 Hero / Banner</span>
+  <span class="badge section">🔵 Seção de Conteúdo</span>
+  <span class="badge logo">🟡 Logo do Site</span>
+  <span class="badge client">🔴 Logos de Clientes</span>
+  <span class="badge footer">🟣 Rodapé</span>
+</div>
+
+<main>
+
+  <div class="tip">
+    <strong>Como usar este documento:</strong> Cada imagem tem um <strong>ID único</strong> (ex: IMG-01). 
+    Ao solicitar as novas imagens, use o ID para referenciar qual posição deve ser substituída.
+    A coluna <em>"Nome do arquivo atual"</em> é o nome que a imagem tem no servidor WordPress do site.
+    A coluna <em>"Dimensões recomendadas"</em> indica o tamanho ideal para enviar a nova imagem.
+  </div>
+
+  <!-- ===== LOGOS ===== -->
+  <div class="group">
+    <div class="group-title">🟡 Logo do Site</div>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Descrição / Onde aparece</th>
+          <th>Nome do arquivo atual</th>
+          <th>Dimensões recomendadas</th>
+          <th>Observações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="id">IMG-01</td>
+          <td class="desc">
+            <strong>Logo no menu (header)</strong><br>
+            <span class="where">Aparece no topo da página, canto esquerdo do menu de navegação. Visível em todas as páginas.</span>
+          </td>
+          <td><span class="filename">logo-biosafe-header.png</span></td>
+          <td class="dim">229 × 102 px</td>
+          <td class="note">Fundo transparente (PNG). Aparece sobre fundo escuro.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ===== HERO / BANNER ===== -->
+  <div class="group">
+    <div class="group-title">🟢 Hero / Banner Principal</div>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Descrição / Onde aparece</th>
+          <th>Nome do arquivo atual</th>
+          <th>Dimensões recomendadas</th>
+          <th>Observações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="id">IMG-02</td>
+          <td class="desc">
+            <strong>Logo grande no banner hero</strong><br>
+            <span class="where">Dentro do banner principal (hero section), logotipo centralizado sobre o fundo escuro com tagline "Engenharia de Sistemas de Proteção contra Quedas".</span>
+          </td>
+          <td><span class="filename">logo-biosafe-hero.png</span></td>
+          <td class="dim">398 × 169 px</td>
+          <td class="note">Fundo transparente. Versão maior do logo para o banner.</td>
+        </tr>
+        <tr>
+          <td class="id">IMG-03</td>
+          <td class="desc">
+            <strong>Elemento decorativo esquerdo do banner</strong><br>
+            <span class="where">Lateral esquerda do banner hero. Elemento gráfico vertical (provavelmente uma pessoa ou equipamento de segurança).</span>
+          </td>
+          <td><span class="filename">banner-elemento-esquerdo.png</span></td>
+          <td class="dim">122 × 306 px</td>
+          <td class="note">Imagem vertical. Pode ser recortada (PNG com transparência).</td>
+        </tr>
+        <tr>
+          <td class="id">IMG-04</td>
+          <td class="desc">
+            <strong>Elemento decorativo direito do banner</strong><br>
+            <span class="where">Lateral direita do banner hero. Elemento gráfico vertical simétrico ao IMG-03.</span>
+          </td>
+          <td><span class="filename">banner-elemento-direito.png</span></td>
+          <td class="dim">121 × 306 px</td>
+          <td class="note">Imagem vertical. Par do IMG-03.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ===== SEÇÕES DE CONTEÚDO ===== -->
+  <div class="group">
+    <div class="group-title">🔵 Seções de Conteúdo</div>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Descrição / Onde aparece</th>
+          <th>Nome do arquivo atual</th>
+          <th>Dimensões recomendadas</th>
+          <th>Observações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="id">IMG-05</td>
+          <td class="desc">
+            <strong>Imagem de fundo — Seção "Treinamentos / Consultorias / Locação"</strong><br>
+            <span class="where">Fundo da seção central com o texto "TREINAMENTOS / CONSULTORIAS / LOCAÇÃO" e o botão "Fale agora com um especialista". Alt: "fundoqg".</span>
+          </td>
+          <td><span class="filename">fundoqg.png</span></td>
+          <td class="dim">938 × 459 px (largura)</td>
+          <td class="note">Imagem de fundo de seção. Texto sobreposto em branco. Usar imagem com boa iluminação/contraste.</td>
+        </tr>
+        <tr>
+          <td class="id">IMG-06</td>
+          <td class="desc">
+            <strong>Imagem da seção "Treinamentos"</strong><br>
+            <span class="where">Foto ao lado do bloco de texto sobre treinamentos personalizados. Primeira seção de destaque após o banner.</span>
+          </td>
+          <td><span class="filename">treinamentos-foto.jpg</span></td>
+          <td class="dim">800 × 500 px</td>
+          <td class="note">Foto de treinamento em andamento. Boa qualidade de resolução.</td>
+        </tr>
+        <tr>
+          <td class="id">IMG-07</td>
+          <td class="desc">
+            <strong>Imagem da seção "Consultorias"</strong><br>
+            <span class="where">Foto ao lado do bloco de texto sobre consultorias personalizadas. Segunda seção de destaque.</span>
+          </td>
+          <td><span class="filename">consultorias-foto.jpg</span></td>
+          <td class="dim">768 × 480 px</td>
+          <td class="note">Foto relacionada a consultoria/vistoria técnica.</td>
+        </tr>
+        <tr>
+          <td class="id">IMG-08</td>
+          <td class="desc">
+            <strong>Foto "William" — Seção "Locação / Equipamentos"</strong><br>
+            <span class="where">Foto de pessoa (William) ao lado do texto sobre locação de equipamentos. Alt: "william-grupo-biosafe-seguranca-do-trabalho".</span>
+          </td>
+          <td><span class="filename">william-grupo-biosafe-seguranca-do-trabalho.jpg</span></td>
+          <td class="dim">768 × 480 px</td>
+          <td class="note">Foto de colaborador/instrutor. Nome "William" identificado no alt text. Pode ser substituída por outra pessoa ou imagem de equipamento.</td>
+        </tr>
+        <tr>
+          <td class="id">IMG-09</td>
+          <td class="desc">
+            <strong>Imagem da seção de "Locação" (segunda imagem)</strong><br>
+            <span class="where">Segunda foto da seção de locação de equipamentos. Complementa a IMG-08.</span>
+          </td>
+          <td><span class="filename">locacao-foto.jpg</span></td>
+          <td class="dim">768 × 480 px</td>
+          <td class="note">Foto de equipamentos para locação ou uso em campo.</td>
+        </tr>
+        <tr>
+          <td class="id">IMG-10</td>
+          <td class="desc">
+            <strong>Imagem da galeria / "Conheça mais do nosso trabalho"</strong><br>
+            <span class="where">Grande imagem quadrada na seção "Conheça mais do nosso trabalho", antes do feed do Instagram.</span>
+          </td>
+          <td><span class="filename">galeria-trabalho.jpg</span></td>
+          <td class="dim">1536 × 1536 px (quadrada)</td>
+          <td class="note">Imagem quadrada de alta resolução. Pode ser foto de projeto executado.</td>
+        </tr>
+        <tr>
+          <td class="id">IMG-11</td>
+          <td class="desc">
+            <strong>Onda / separador visual entre seções</strong><br>
+            <span class="where">Elemento decorativo SVG/PNG em forma de onda, localizado entre a seção de clientes e o rodapé. Dimensão muito larga (1920px).</span>
+          </td>
+          <td><span class="filename">separador-onda.png</span></td>
+          <td class="dim">1920 × 96 px</td>
+          <td class="note">Elemento decorativo de transição entre seções. Geralmente é um SVG ou PNG muito horizontal.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ===== LOGOS DE CLIENTES ===== -->
+  <div class="group">
+    <div class="group-title">🔴 Logos de Clientes (Seção "Nossos Clientes")</div>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nome do arquivo / Cliente</th>
+          <th>Dimensões atuais</th>
+          <th>Observações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="id">CLI-01</td><td><span class="filename">1_7jyFnCHHX-KS48Kq6frUiw-1.png</span></td><td class="dim">156 × 45 px</td><td>Logo de cliente (nome desconhecido pelo arquivo).</td></tr>
+        <tr><td class="id">CLI-02</td><td><span class="filename">BmATtK6ERdI1In0Bjj4LHSmrUMiZoayYC5Yz5CRb-1.png</span></td><td class="dim">184 × 57 px</td><td>Logo de cliente.</td></tr>
+        <tr><td class="id">CLI-03</td><td><span class="filename">cba_logo-1.png</span></td><td class="dim">141 × 47 px</td><td>Logo CBA.</td></tr>
+        <tr><td class="id">CLI-04</td><td><span class="filename">CPQD_Logo_Positivo_RGB-1030x368-1-1.png</span></td><td class="dim">114 × 41 px</td><td>Logo CPQD.</td></tr>
+        <tr><td class="id">CLI-05</td><td><span class="filename">Group-9.png</span></td><td class="dim">237 × 71 px</td><td>Logo de cliente (grupo).</td></tr>
+        <tr><td class="id">CLI-06</td><td><span class="filename">Group-111.png</span></td><td class="dim">116 × 36 px</td><td>Logo de cliente (grupo).</td></tr>
+        <tr><td class="id">CLI-07</td><td><span class="filename">hitachi-1.png</span></td><td class="dim">142 × 43 px</td><td>Logo Hitachi.</td></tr>
+        <tr><td class="id">CLI-08</td><td><span class="filename">layout_set_logo-1.png</span></td><td class="dim">177 × 26 px</td><td>Logo de cliente.</td></tr>
+        <tr><td class="id">CLI-09</td><td><span class="filename">logo-1.png</span></td><td class="dim">111 × 58 px</td><td>Logo genérico de cliente.</td></tr>
+        <tr><td class="id">CLI-10</td><td><span class="filename">logo_acelor-1.png</span></td><td class="dim">171 × 70 px</td><td>Logo ArcelorMittal.</td></tr>
+        <tr><td class="id">CLI-11</td><td><span class="filename">logo_auster-1.png</span></td><td class="dim">150 × 70 px</td><td>Logo Auster.</td></tr>
+        <tr><td class="id">CLI-12</td><td><span class="filename">logo_funcamp-1.png</span></td><td class="dim">197 × 50 px</td><td>Logo Funcamp.</td></tr>
+        <tr><td class="id">CLI-13</td><td><span class="filename">logo_Jungheinrich-1.png</span></td><td class="dim">217 × 32 px</td><td>Logo Jungheinrich.</td></tr>
+        <tr><td class="id">CLI-14</td><td><span class="filename">logo_mecalux-1.png</span></td><td class="dim">220 × 63 px</td><td>Logo Mecalux.</td></tr>
+        <tr><td class="id">CLI-15</td><td><span class="filename">logo_Mendes-Holler-1.png</span></td><td class="dim">135 × 49 px</td><td>Logo Mendes Holler.</td></tr>
+        <tr><td class="id">CLI-16</td><td><span class="filename">logo_scala-1.png</span></td><td class="dim">203 × 56 px</td><td>Logo Scala.</td></tr>
+        <tr><td class="id">CLI-17</td><td><span class="filename">logo_solenis-1.png</span></td><td class="dim">154 × 23 px</td><td>Logo Solenis.</td></tr>
+        <tr><td class="id">CLI-18</td><td><span class="filename">logog1-300x89-1.png</span></td><td class="dim">122 × 37 px</td><td>Logo G1.</td></tr>
+        <tr><td class="id">CLI-19</td><td><span class="filename">logo-pirelli-1.png</span></td><td class="dim">150 × 32 px</td><td>Logo Pirelli.</td></tr>
+        <tr><td class="id">CLI-20</td><td><span class="filename">logo-rdm-1.png</span></td><td class="dim">110 × 25 px</td><td>Logo RDM.</td></tr>
+        <tr><td class="id">CLI-21</td><td><span class="filename">logo-sherwinwillians-1.png</span></td><td class="dim">134 × 66 px</td><td>Logo Sherwin-Williams.</td></tr>
+        <tr><td class="id">CLI-22</td><td><span class="filename">qualinox-1.png</span></td><td class="dim">150 × 47 px</td><td>Logo Qualinox.</td></tr>
+        <tr><td class="id">CLI-23</td><td><span class="filename">RGB-ALS-Logo-Blue-RSRP-Blue-1.png</span></td><td class="dim">110 × 110 px</td><td>Logo ALS (quadrado).</td></tr>
+        <tr><td class="id">CLI-24</td><td><span class="filename">stoller-1.png</span></td><td class="dim">162 × 60 px</td><td>Logo Stoller.</td></tr>
+        <tr><td class="id">CLI-25</td><td><span class="filename">Takeda_Pharmaceutical_Company_logo-1.png</span></td><td class="dim">132 × 45 px</td><td>Logo Takeda.</td></tr>
+        <tr><td class="id">CLI-26</td><td><span class="filename">STEELFLEX-LOGO-EMPRESA</span></td><td class="dim">170 × 50 px</td><td>Logo Steelflex.</td></tr>
+        <tr><td class="id">CLI-27</td><td><span class="filename">BRACOL-EMPRESA</span></td><td class="dim">120 × 50 px</td><td>Logo Bracol.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ===== RODAPÉ ===== -->
+  <div class="group">
+    <div class="group-title">🟣 Rodapé (Footer)</div>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Descrição / Onde aparece</th>
+          <th>Nome do arquivo atual</th>
+          <th>Dimensões recomendadas</th>
+          <th>Observações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="id">IMG-12</td>
+          <td class="desc">
+            <strong>Logo branca no rodapé</strong><br>
+            <span class="where">Logo do Grupo Biosafe em versão branca, exibida no rodapé da página. Alt: "logo em branco do grupo biosafe".</span>
+          </td>
+          <td><span class="filename">logo-biosafe-branco.png</span></td>
+          <td class="dim">179 × 226 px</td>
+          <td class="note">Versão branca/clara do logo, sobre fundo escuro. PNG com transparência.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ===== RESUMO ===== -->
+  <div class="group">
+    <div class="group-title">📋 Resumo Geral</div>
+    <table>
+      <thead>
+        <tr><th>Categoria</th><th>Quantidade</th><th>IDs</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>🟡 Logo do Site</td><td>1</td><td>IMG-01</td></tr>
+        <tr><td>🟢 Hero / Banner</td><td>3</td><td>IMG-02, IMG-03, IMG-04</td></tr>
+        <tr><td>🔵 Seções de Conteúdo</td><td>7</td><td>IMG-05 a IMG-11</td></tr>
+        <tr><td>🔴 Logos de Clientes</td><td>27</td><td>CLI-01 a CLI-27</td></tr>
+        <tr><td>🟣 Rodapé</td><td>1</td><td>IMG-12</td></tr>
+        <tr style="font-weight:bold; background:#f0f7f0;"><td>Total</td><td>39</td><td>—</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="tip">
+    <strong>💡 Dica para solicitar as novas imagens:</strong><br>
+    Use esta tabela para pedir as imagens à outra pessoa. Exemplo: <em>"Preciso das imagens IMG-06, IMG-07 e IMG-08. IMG-06 deve ser uma foto de treinamento (800×500px), IMG-07 uma foto de consultoria técnica (768×480px), e IMG-08 pode ser qualquer foto de colaborador ou equipamento (768×480px)."</em><br><br>
+    As imagens das <strong>seções de conteúdo</strong> (IMG-05 a IMG-10) são as que mais impactam visualmente a Home e provavelmente são as que você vai querer atualizar primeiro.<br><br>
+    Os <strong>logos de clientes</strong> (CLI-01 a CLI-27) só precisam ser trocados se um cliente for adicionado ou removido da carteira.
+  </div>
+
+</main>
+</body>
+</html>
